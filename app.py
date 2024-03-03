@@ -1,4 +1,4 @@
-import streamlit as st
+erimport streamlit as st
 import pickle
 import pandas as pd
 df = pickle.load(open('df.pkl', 'rb'))
@@ -40,4 +40,4 @@ if st.button('Predict Score'):
          'last_five': [last_five]}
     )
     result = pipe.predict(input)
-    st.text(' Predicted Score ' + str(int(result[0])))
+    st.header(' Predicted Score ' + str(int(result[0])))
