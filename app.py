@@ -40,4 +40,4 @@ if st.button('Predict Score'):
          'last_five': [last_five]}
     )
     result = pipe.predict(input)
-    st.header(' Predicted Score ' + str(int(result[0])))
+    st.header(' Predicted Score - ' + str(int(result[0])))
